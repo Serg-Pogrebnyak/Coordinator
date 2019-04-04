@@ -12,6 +12,7 @@
 		0BF3B1902256542000207437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* Main.storyboard */; };
 		0BF3B1922256542200207437 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B1912256542200207437 /* Assets.xcassets */; };
 		0BF3B1952256542200207437 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B1932256542200207437 /* LaunchScreen.storyboard */; };
+		0BF3B19E2256556500207437 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B19D2256556500207437 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		0BF3B1912256542200207437 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0BF3B1942256542200207437 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0BF3B1962256542200207437 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BF3B19D2256556500207437 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		0BF3B17E2256542000207437 = {
 			isa = PBXGroup;
 			children = (
+				0BF3B19C2256555600207437 /* Model */,
 				0BF3B1892256542000207437 /* CoordinatorSkillUp */,
 				0BF3B1882256542000207437 /* Products */,
 			);
@@ -62,6 +65,14 @@
 				0BF3B1962256542200207437 /* Info.plist */,
 			);
 			path = CoordinatorSkillUp;
+			sourceTree = "<group>";
+		};
+		0BF3B19C2256555600207437 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3B19D2256556500207437 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +148,7 @@
 			files = (
 				0BF3B18D2256542000207437 /* ViewController.swift in Sources */,
 				0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */,
+				0BF3B19E2256556500207437 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
