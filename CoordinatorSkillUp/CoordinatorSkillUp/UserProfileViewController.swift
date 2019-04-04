@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class UserProfileViewController: UIViewController {
     
     //input
     var user: User? {didSet { updateUserInfoOnUI() }}
@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var labelUserInfo: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "User Profile"
     }
     
     override func viewWillAppear(_ animated: Bool) {
