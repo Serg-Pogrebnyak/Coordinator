@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SelectCityTableViewController: UITableViewController {
+class SelectCityTableViewController: UITableViewController, CitiesOutput {
     
     //output
     var selectCity: ( (City) -> Void )?

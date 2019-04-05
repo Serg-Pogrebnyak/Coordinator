@@ -13,6 +13,10 @@ protocol UpdateWithUser: class {
     var user: User? {get set}
 }
 
+protocol CitiesOutput {
+    var selectCity: ((City) -> Void )? {get set}
+}
+
 final class UserEditProfileCoordinator {
     // MARK: - Properties
     private var user: User {didSet { updateInterfaces()} }
@@ -39,12 +43,12 @@ final class UserEditProfileCoordinator {
     }
     
     private func showCitiesScreen() {
-        let controller = UIStoryboard.makeCitiesController()
+        var controller = UIStoryboard.makeCitiesController()
         controller.selectCity = { [weak self] city in
             self?.user.city = city
             _ = self?.navigationController?.popViewController(animated: true)
         }
-        navigationController?.pushViewController(controller, animated: true)
+        navigationController?.pushViewController(controller as! UIViewController, animated: true)
     }
     
     private func updateInterfaces() {
@@ -58,8 +62,8 @@ extension UIStoryboard {
         return storyboard.instantiateViewController(withIdentifier: "UserProfileVC") as! UserProfileViewController
     }
     
-    static func makeCitiesController() -> SelectCityTableViewController {
+    static func makeCitiesController() -> CitiesOutput {
         let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! SelectCityTableViewController
+        return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput
     }
 }
