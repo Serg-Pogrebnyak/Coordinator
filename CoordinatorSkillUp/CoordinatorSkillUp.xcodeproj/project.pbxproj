@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */; };
+		0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */; };
+		0B97F17B225758260029F202 /* MagicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F17A225758260029F202 /* MagicCell.xib */; };
+		0B97F17D225758390029F202 /* MagicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F17C225758390029F202 /* MagicCell.swift */; };
 		0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18A2256542000207437 /* AppDelegate.swift */; };
 		0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B1902256542000207437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* Main.storyboard */; };
@@ -22,6 +25,9 @@
 
 /* Begin PBXFileReference section */
 		0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditProfileCoordinator.swift; sourceTree = "<group>"; };
+		0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSelectCityTableViewController.swift; sourceTree = "<group>"; };
+		0B97F17A225758260029F202 /* MagicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagicCell.xib; sourceTree = "<group>"; };
+		0B97F17C225758390029F202 /* MagicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCell.swift; sourceTree = "<group>"; };
 		0BF3B1872256542000207437 /* CoordinatorSkillUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorSkillUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF3B18A2256542000207437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF3B18C2256542000207437 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +58,7 @@
 			children = (
 				0BF3B18C2256542000207437 /* UserProfileViewController.swift */,
 				0BF3B19F2256580F00207437 /* SelectCityTableViewController.swift */,
+				0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 			children = (
 				0BF3B1A422565D0300207437 /* CityCell.xib */,
 				0BF3B1A622565D3700207437 /* CityCell.swift */,
+				0B97F17A225758260029F202 /* MagicCell.xib */,
+				0B97F17C225758390029F202 /* MagicCell.swift */,
 			);
 			path = "Custom Cell";
 			sourceTree = "<group>";
@@ -197,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BF3B1952256542200207437 /* LaunchScreen.storyboard in Resources */,
+				0B97F17B225758260029F202 /* MagicCell.xib in Resources */,
 				0BF3B1922256542200207437 /* Assets.xcassets in Resources */,
 				0BF3B1A522565D0300207437 /* CityCell.xib in Resources */,
 				0BF3B1902256542000207437 /* Main.storyboard in Resources */,
@@ -214,6 +224,8 @@
 				0BF3B1A22256583600207437 /* City.swift in Sources */,
 				0BF3B1A722565D3700207437 /* CityCell.swift in Sources */,
 				0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */,
+				0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */,
+				0B97F17D225758390029F202 /* MagicCell.swift in Sources */,
 				0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */,
 				0BF3B1A02256580F00207437 /* SelectCityTableViewController.swift in Sources */,
 				0BF3B19E2256556500207437 /* User.swift in Sources */,

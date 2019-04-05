@@ -64,6 +64,7 @@ extension UIStoryboard {
     
     static func makeCitiesController() -> CitiesOutput {
         let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput
+        //return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput          //first controller
+        return storyboard.instantiateViewController(withIdentifier: "MagicCityTableView") as! CitiesOutput      //second controller
     }
 }
