@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */; };
 		0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18A2256542000207437 /* AppDelegate.swift */; };
 		0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B1902256542000207437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditProfileCoordinator.swift; sourceTree = "<group>"; };
 		0BF3B1872256542000207437 /* CoordinatorSkillUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorSkillUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF3B18A2256542000207437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF3B18C2256542000207437 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -45,11 +47,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B97F170225734B60029F202 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3B18C2256542000207437 /* UserProfileViewController.swift */,
+				0BF3B19F2256580F00207437 /* SelectCityTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0B97F171225735D40029F202 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3B18A2256542000207437 /* AppDelegate.swift */,
+			);
+			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		0B97F172225735F10029F202 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3B18E2256542000207437 /* Main.storyboard */,
+				0BF3B1932256542200207437 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0B97F173225736030029F202 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0BF3B1912256542200207437 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		0B97F175225736B00029F202 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		0BF3B17E2256542000207437 = {
 			isa = PBXGroup;
 			children = (
-				0BF3B1A322565C5100207437 /* Custom Cell */,
-				0BF3B19C2256555600207437 /* Model */,
 				0BF3B1892256542000207437 /* CoordinatorSkillUp */,
 				0BF3B1882256542000207437 /* Products */,
 			);
@@ -66,12 +108,13 @@
 		0BF3B1892256542000207437 /* CoordinatorSkillUp */ = {
 			isa = PBXGroup;
 			children = (
-				0BF3B18A2256542000207437 /* AppDelegate.swift */,
-				0BF3B18C2256542000207437 /* UserProfileViewController.swift */,
-				0BF3B19F2256580F00207437 /* SelectCityTableViewController.swift */,
-				0BF3B18E2256542000207437 /* Main.storyboard */,
-				0BF3B1912256542200207437 /* Assets.xcassets */,
-				0BF3B1932256542200207437 /* LaunchScreen.storyboard */,
+				0B97F171225735D40029F202 /* App Delegate */,
+				0BF3B1A322565C5100207437 /* Custom Cell */,
+				0BF3B19C2256555600207437 /* Model */,
+				0B97F175225736B00029F202 /* Coordinator */,
+				0B97F170225734B60029F202 /* Controllers */,
+				0B97F172225735F10029F202 /* Storyboards */,
+				0B97F173225736030029F202 /* Images */,
 				0BF3B1962256542200207437 /* Info.plist */,
 			);
 			path = CoordinatorSkillUp;
@@ -171,6 +214,7 @@
 				0BF3B1A22256583600207437 /* City.swift in Sources */,
 				0BF3B1A722565D3700207437 /* CityCell.swift in Sources */,
 				0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */,
+				0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */,
 				0BF3B1A02256580F00207437 /* SelectCityTableViewController.swift in Sources */,
 				0BF3B19E2256556500207437 /* User.swift in Sources */,
 			);
