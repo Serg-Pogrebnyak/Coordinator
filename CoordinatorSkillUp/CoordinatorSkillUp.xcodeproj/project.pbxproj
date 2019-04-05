@@ -11,6 +11,7 @@
 		0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */; };
 		0B97F17B225758260029F202 /* MagicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F17A225758260029F202 /* MagicCell.xib */; };
 		0B97F17D225758390029F202 /* MagicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F17C225758390029F202 /* MagicCell.swift */; };
+		0B97F17F22575C6D0029F202 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F17E22575C6D0029F202 /* Region.swift */; };
 		0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18A2256542000207437 /* AppDelegate.swift */; };
 		0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B1902256542000207437 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* Main.storyboard */; };
@@ -28,6 +29,7 @@
 		0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSelectCityTableViewController.swift; sourceTree = "<group>"; };
 		0B97F17A225758260029F202 /* MagicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagicCell.xib; sourceTree = "<group>"; };
 		0B97F17C225758390029F202 /* MagicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicCell.swift; sourceTree = "<group>"; };
+		0B97F17E22575C6D0029F202 /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		0BF3B1872256542000207437 /* CoordinatorSkillUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorSkillUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF3B18A2256542000207437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF3B18C2256542000207437 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 			children = (
 				0BF3B19D2256556500207437 /* User.swift */,
 				0BF3B1A12256583600207437 /* City.swift */,
+				0B97F17E22575C6D0029F202 /* Region.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */,
 				0BF3B1A22256583600207437 /* City.swift in Sources */,
 				0BF3B1A722565D3700207437 /* CityCell.swift in Sources */,
+				0B97F17F22575C6D0029F202 /* Region.swift in Sources */,
 				0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */,
 				0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */,
 				0B97F17D225758390029F202 /* MagicCell.swift in Sources */,

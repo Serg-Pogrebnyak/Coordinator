@@ -8,19 +8,18 @@
 
 import UIKit
 
-class MagicSelectCityTableViewController: UITableViewController , CitiesOutput {
+class MagicSelectCityTableViewController: UITableViewController, RegionOutput {
     
     //output
-    var selectCity: ( (City) -> Void )?
+    var selectRegion: ( (Region) -> Void )?
     
     //mocked lict of city
-    fileprivate let cityArray = [City(name: "Moscov"),
-                                 City(name: "Kharkiv"),
-                                 City(name: "Kuiv"),
-                                 City(name: "NY"),
-                                 City(name: "Berlin"),
-                                 City(name: "Krakov"),
-                                 City(name: "Warshava")]
+    fileprivate let regionArray = [Region(name: "Kharkiv reg"),
+                                   Region(name: "Kuiv reg"),
+                                   Region(name: "Ternopil reg"),
+                                   Region(name: "Kherson reg"),
+                                   Region(name: "Odessa reg"),
+                                   Region(name: "Lviv reg")]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,19 +30,19 @@ class MagicSelectCityTableViewController: UITableViewController , CitiesOutput {
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cityArray.count
+        return regionArray.count
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MagicCell", for: indexPath) as! MagicCell
-        cell.setDataInCell(cityArray[indexPath.row])
+        cell.setDataInCell(regionArray[indexPath.row])
         return cell
     }
     
     // MARK: Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        selectCity?(cityArray[indexPath.row])
+        selectRegion?(regionArray[indexPath.row])
     }
 }

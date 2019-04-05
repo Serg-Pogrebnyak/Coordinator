@@ -17,6 +17,10 @@ protocol CitiesOutput {
     var selectCity: ((City) -> Void )? {get set}
 }
 
+protocol RegionOutput {
+    var selectRegion: ( (Region) -> Void )? {get set}
+}
+
 final class UserEditProfileCoordinator {
     // MARK: - Properties
     private var user: User {didSet { updateInterfaces()} }
@@ -37,16 +41,28 @@ final class UserEditProfileCoordinator {
         let controller = UIStoryboard.makeUserEditController()
         controller.user = user
         controller.didTapOnSelectCity = { [weak self] in
-            self?.showCitiesScreen()
+            self?.showRegionScreen()
         }
         navigationController?.pushViewController(controller, animated: false)
+    }
+    
+    private func showRegionScreen() {
+        var controller = UIStoryboard.makeRegionController()
+        controller.selectRegion = { [weak self] region in
+            self?.showCitiesScreen()
+        }
+        navigationController?.pushViewController(controller as! UIViewController, animated: true)
     }
     
     private func showCitiesScreen() {
         var controller = UIStoryboard.makeCitiesController()
         controller.selectCity = { [weak self] city in
             self?.user.city = city
-            _ = self?.navigationController?.popViewController(animated: true)
+            self?.navigationController?.viewControllers.forEach({ (viewController) in
+                if ((viewController as? UpdateWithUser) != nil) {
+                    self?.navigationController?.popToViewController(viewController, animated: true)
+                }
+            })
         }
         navigationController?.pushViewController(controller as! UIViewController, animated: true)
     }
@@ -62,9 +78,13 @@ extension UIStoryboard {
         return storyboard.instantiateViewController(withIdentifier: "UserProfileVC") as! UserProfileViewController
     }
     
+    static func makeRegionController() -> RegionOutput {
+        let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
+        return storyboard.instantiateViewController(withIdentifier: "MagicCityTableView") as! RegionOutput
+    }
+    
     static func makeCitiesController() -> CitiesOutput {
         let storyboard = UIStoryboard.init(name: "Main", bundle: Bundle.main)
-        //return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput          //first controller
-        return storyboard.instantiateViewController(withIdentifier: "MagicCityTableView") as! CitiesOutput      //second controller
+        return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput
     }
 }

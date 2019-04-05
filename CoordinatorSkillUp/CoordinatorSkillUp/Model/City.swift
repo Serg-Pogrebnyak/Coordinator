@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct City {
+protocol Naming {
+    var name: String {get set}
+}
+struct City: Naming {
     var name: String
 }

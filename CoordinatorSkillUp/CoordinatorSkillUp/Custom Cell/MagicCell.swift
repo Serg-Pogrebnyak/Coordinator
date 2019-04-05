@@ -12,7 +12,7 @@ class MagicCell: UITableViewCell {
 
     @IBOutlet fileprivate weak var labelCity: UILabel!
 
-    func setDataInCell(_ city: City) {
+    func setDataInCell(_ city: Naming) {
         labelCity.text = city.name
         self.backgroundColor = UIColor(red:     .random(in: 0...1),
                                        green:   .random(in: 0...1),
