@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UserProfileViewController: UIViewController {
+class UserProfileViewController: UIViewController, UpdateWithUser {
     
     //input
     var user: User? {didSet { updateUserInfoOnUI() }}
@@ -32,6 +32,6 @@ class UserProfileViewController: UIViewController {
     }
     
     fileprivate func updateUserInfoOnUI() {
-        
+        labelUserInfo?.text = user!.city.name
     }
 }

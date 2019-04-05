@@ -12,8 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var coordinator: UserEditProfileCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        guard  let navigationController = window?.rootViewController as? UINavigationController else {
+            return true
+        }
+        let user = User(name: "Serg Pogrebnyak", city: City(name: "Kharkiv"))
+        coordinator = UserEditProfileCoordinator(user: user, navigationController: navigationController)
+        coordinator.start()
         return true
     }
 

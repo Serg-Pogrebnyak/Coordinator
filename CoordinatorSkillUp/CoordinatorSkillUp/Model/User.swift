@@ -10,5 +10,5 @@ import Foundation
 
 struct User {
     var name: String
-    var city: String
+    var city: City
 }
