@@ -32,6 +32,6 @@ class UserProfileViewController: UIViewController, UpdateWithUser {
     }
     
     fileprivate func updateUserInfoOnUI() {
-        labelUserInfo?.text = user!.city.name
+        labelUserInfo?.text = "User: \(user!.name) \n City: \(user!.city.name)"
     }
 }
