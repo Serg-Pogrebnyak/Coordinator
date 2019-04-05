@@ -15,6 +15,7 @@ protocol UpdateWithUser: class {
 
 protocol CitiesOutput {
     var selectCity: ((City) -> Void )? {get set}
+    var cityArray: [City] {get set}
 }
 
 protocol RegionOutput {
@@ -41,7 +42,8 @@ final class UserEditProfileCoordinator {
         let controller = UIStoryboard.makeUserEditController()
         controller.user = user
         controller.didTapOnSelectCity = { [weak self] in
-            self?.showRegionScreen()
+            self?.showCitiesScreen()
+            //self?.showRegionScreen()
         }
         navigationController?.pushViewController(controller, animated: false)
     }
@@ -49,13 +51,16 @@ final class UserEditProfileCoordinator {
     private func showRegionScreen() {
         var controller = UIStoryboard.makeRegionController()
         controller.selectRegion = { [weak self] region in
-            self?.showCitiesScreen()
+            self?.showCitiesScreen(cityArray: region.cityArray)
         }
         navigationController?.pushViewController(controller as! UIViewController, animated: true)
     }
     
-    private func showCitiesScreen() {
+    private func showCitiesScreen(cityArray: [City]? = nil) {
         var controller = UIStoryboard.makeCitiesController()
+        if cityArray != nil {
+           controller.cityArray = cityArray!
+        }
         controller.selectCity = { [weak self] city in
             self?.user.city = city
             self?.navigationController?.viewControllers.forEach({ (viewController) in

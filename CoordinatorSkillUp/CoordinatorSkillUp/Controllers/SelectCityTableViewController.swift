@@ -14,13 +14,13 @@ class SelectCityTableViewController: UITableViewController, CitiesOutput {
     var selectCity: ( (City) -> Void )?
     
     //mocked lict of city
-    fileprivate let cityArray = [City(name: "Moscov"),
-                                 City(name: "Kharkiv"),
-                                 City(name: "Kuiv"),
-                                 City(name: "NY"),
-                                 City(name: "Berlin"),
-                                 City(name: "Krakov"),
-                                 City(name: "Warshava")]
+    var cityArray = [City(name: "Moscov"),
+                     City(name: "Kharkiv"),
+                     City(name: "Kuiv"),
+                     City(name: "NY"),
+                     City(name: "Berlin"),
+                     City(name: "Krakov"),
+                     City(name: "Warshava")]
 
     override func viewDidLoad() {
         super.viewDidLoad()
