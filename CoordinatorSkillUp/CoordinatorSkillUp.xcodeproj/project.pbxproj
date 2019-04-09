@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B94EE6F225CCA4000158B91 /* CoordinatorSkillUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */; };
 		0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */; };
 		0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */; };
 		0B97F17B225758260029F202 /* MagicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0B97F17A225758260029F202 /* MagicCell.xib */; };
@@ -24,7 +25,20 @@
 		0BF3B1A722565D3700207437 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B1A622565D3700207437 /* CityCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		0B94EE71225CCA4000158B91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0BF3B17F2256542000207437 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0BF3B1862256542000207437;
+			remoteInfo = CoordinatorSkillUp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		0B94EE6C225CCA4000158B91 /* CoordinatorSkillUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorSkillUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSkillUpUITests.swift; sourceTree = "<group>"; };
+		0B94EE70225CCA4000158B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEditProfileCoordinator.swift; sourceTree = "<group>"; };
 		0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagicSelectCityTableViewController.swift; sourceTree = "<group>"; };
 		0B97F17A225758260029F202 /* MagicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MagicCell.xib; sourceTree = "<group>"; };
@@ -45,6 +59,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0B94EE69225CCA4000158B91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BF3B1842256542000207437 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,6 +76,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B94EE6D225CCA4000158B91 /* CoordinatorSkillUpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */,
+				0B94EE70225CCA4000158B91 /* Info.plist */,
+			);
+			path = CoordinatorSkillUpUITests;
+			sourceTree = "<group>";
+		};
 		0B97F170225734B60029F202 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF3B1892256542000207437 /* CoordinatorSkillUp */,
+				0B94EE6D225CCA4000158B91 /* CoordinatorSkillUpUITests */,
 				0BF3B1882256542000207437 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				0BF3B1872256542000207437 /* CoordinatorSkillUp.app */,
+				0B94EE6C225CCA4000158B91 /* CoordinatorSkillUpUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +185,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0B94EE6B225CCA4000158B91 /* CoordinatorSkillUpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0B94EE75225CCA4000158B91 /* Build configuration list for PBXNativeTarget "CoordinatorSkillUpUITests" */;
+			buildPhases = (
+				0B94EE68225CCA4000158B91 /* Sources */,
+				0B94EE69225CCA4000158B91 /* Frameworks */,
+				0B94EE6A225CCA4000158B91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B94EE72225CCA4000158B91 /* PBXTargetDependency */,
+			);
+			name = CoordinatorSkillUpUITests;
+			productName = CoordinatorSkillUpUITests;
+			productReference = 0B94EE6C225CCA4000158B91 /* CoordinatorSkillUpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		0BF3B1862256542000207437 /* CoordinatorSkillUp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BF3B1992256542200207437 /* Build configuration list for PBXNativeTarget "CoordinatorSkillUp" */;
@@ -180,6 +230,10 @@
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Sergey Pohrebnuak";
 				TargetAttributes = {
+					0B94EE6B225CCA4000158B91 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 0BF3B1862256542000207437;
+					};
 					0BF3B1862256542000207437 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -199,11 +253,19 @@
 			projectRoot = "";
 			targets = (
 				0BF3B1862256542000207437 /* CoordinatorSkillUp */,
+				0B94EE6B225CCA4000158B91 /* CoordinatorSkillUpUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0B94EE6A225CCA4000158B91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BF3B1852256542000207437 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,6 +281,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0B94EE68225CCA4000158B91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B94EE6F225CCA4000158B91 /* CoordinatorSkillUpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0BF3B1832256542000207437 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -237,6 +307,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B94EE72225CCA4000158B91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0BF3B1862256542000207437 /* CoordinatorSkillUp */;
+			targetProxy = 0B94EE71225CCA4000158B91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0BF3B18E2256542000207437 /* Main.storyboard */ = {
@@ -258,6 +336,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0B94EE73225CCA4000158B91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B6M85MQ7J;
+				INFOPLIST_FILE = CoordinatorSkillUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Serg.CoordinatorSkillUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoordinatorSkillUp;
+			};
+			name = Debug;
+		};
+		0B94EE74225CCA4000158B91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9B6M85MQ7J;
+				INFOPLIST_FILE = CoordinatorSkillUpUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Serg.CoordinatorSkillUpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoordinatorSkillUp;
+			};
+			name = Release;
+		};
 		0BF3B1972256542200207437 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -415,6 +531,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0B94EE75225CCA4000158B91 /* Build configuration list for PBXNativeTarget "CoordinatorSkillUpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0B94EE73225CCA4000158B91 /* Debug */,
+				0B94EE74225CCA4000158B91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		0BF3B1822256542000207437 /* Build configuration list for PBXProject "CoordinatorSkillUp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

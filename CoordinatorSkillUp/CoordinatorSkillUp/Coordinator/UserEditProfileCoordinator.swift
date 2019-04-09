@@ -42,8 +42,8 @@ final class UserEditProfileCoordinator {
         let controller = UIStoryboard.makeUserEditController()
         controller.user = user
         controller.didTapOnSelectCity = { [weak self] in
-            self?.showCitiesScreen()
-            //self?.showRegionScreen()
+            //self?.showCitiesScreen()
+            self?.showRegionScreen()
         }
         navigationController?.pushViewController(controller, animated: false)
     }

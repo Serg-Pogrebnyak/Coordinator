@@ -20,6 +20,7 @@ class UserProfileViewController: UIViewController, UpdateWithUser {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "User Profile"
+        view.accessibilityIdentifier = "userProfileViewController"
     }
     
     override func viewWillAppear(_ animated: Bool) {
