@@ -44,6 +44,13 @@ class CoordinatorSkillUpUITests: XCTestCase {
     
     func testUniversalTestForAllFlow() {
         XCTAssertTrue(app.buttons["Select another city"].isHittable)//check user can tap on button yes or no
+        //make screenshot - test navigator -> right tap mous -> jump to result -> find attach (Screenshot)
+        let screenshot = app.windows.firstMatch.screenshot()
+        let attachment = XCTAttachment(screenshot: screenshot)
+        attachment.name = "My Great Screenshot"
+        attachment.lifetime = .keepAlways
+        add(attachment)
+        
         app.buttons["Select another city"].tap()//tap on button
         XCTAssertTrue(app.buttons["Select another city"].exists)//check has button with display name "Select another city"
         XCTAssertTrue(app.buttons["Select another city"].isEnabled)//check is enable button
