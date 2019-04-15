@@ -45,7 +45,7 @@ final class UserEditProfileCoordinator {
             //self?.showCitiesScreen()
             self?.showRegionScreen()
         }
-        navigationController?.pushViewController(controller, animated: false)
+        navigationController?.pushViewController(controller, animated: true)
     }
     
     private func showRegionScreen() {

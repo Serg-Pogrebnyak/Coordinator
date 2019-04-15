@@ -11,7 +11,12 @@ import UIKit
 final class TabBarCoordinator {
 
     private weak var tabBarController: UITabBarController?
+    
     private var nextCoordibator: UserEditProfileCoordinator?
+    
+    private let firstNavigation = UINavigationController()
+    private let secondNavigation = UINavigationController()
+    private let thirdNavigation = UINavigationController()
     
     init(tabBarController: UITabBarController) {
         self.tabBarController = tabBarController
@@ -32,33 +37,23 @@ final class TabBarCoordinator {
         //third
         let thirdVC = TabBarControllerFabric.makeThirdController()
         
-        
-        tabBarController?.viewControllers = [firstVC, secondVC, thirdVC]
+        self.firstNavigation.viewControllers = [firstVC]
+        self.secondNavigation.viewControllers = [secondVC]
+        self.thirdNavigation.viewControllers = [thirdVC]
+        tabBarController?.viewControllers = [self.firstNavigation, self.secondNavigation, self.thirdNavigation]
     }
     
     fileprivate func showUserDetailFlow() {
-        let navigation = TabBarControllerFabric.getUserDetailNavigation()
         let user = User(name: "Serg Pogrebnyak", city: City(name: "Kharkiv"))
-        let userDetailCoordinator = UserEditProfileCoordinator.init(user: user, navigationController: navigation)
+        let userDetailCoordinator = UserEditProfileCoordinator.init(user: user, navigationController: self.secondNavigation)
         self.nextCoordibator = userDetailCoordinator
         self.nextCoordibator!.start()
-        
-        //first
-        let firstVC = TabBarControllerFabric.makeFirstController()
-        //third
-        let thirdVC = TabBarControllerFabric.makeThirdController()
-        
-        
-        tabBarController?.viewControllers = [firstVC, navigation, thirdVC]
     }
-    
-    
 }
 
 struct TabBarControllerFabric {
     
     static private var storyboardName = "Main"
-    static private var nextCoordinatorStoryboardName = "NavigationControllFlow"
     
     static func makeFirstController() -> FirstVC {
         let storyboard = UIStoryboard.init(name: storyboardName, bundle: Bundle.main)
@@ -82,10 +77,5 @@ struct TabBarControllerFabric {
         let tabBarItemThird = UITabBarItem(title: "Third", image: UIImage.init(named: "third")!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage.init(named: "third")!)
         thirdVC.tabBarItem = tabBarItemThird
         return thirdVC
-    }
-    
-    static func getUserDetailNavigation() -> UINavigationController {
-        let storyboard = UIStoryboard.init(name: nextCoordinatorStoryboardName, bundle: Bundle.main)
-        return storyboard.instantiateViewController(withIdentifier: "UserDetailNavigationController") as! UINavigationController
     }
 }

@@ -15,6 +15,7 @@ class SecondVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Second"
     }
     
     @IBAction func tapOnSegueButton(_ sender: Any) {

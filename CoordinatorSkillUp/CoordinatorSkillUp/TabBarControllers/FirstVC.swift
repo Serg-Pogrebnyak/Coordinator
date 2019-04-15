@@ -12,5 +12,6 @@ class FirstVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "First"
     }
 }
