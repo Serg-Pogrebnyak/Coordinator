@@ -28,6 +28,8 @@
 		0BADC02D2264C3EA00E5A2B6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B1A12256583600207437 /* City.swift */; };
 		0BADC02E2264C3EA00E5A2B6 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F17E22575C6D0029F202 /* Region.swift */; };
 		0BADC02F2264C64100E5A2B6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
+		0BADC0312264D2CB00E5A2B6 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BADC0302264D2CB00E5A2B6 /* FourthVC.swift */; };
+		0BADC0322264D2CB00E5A2B6 /* FourthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BADC0302264D2CB00E5A2B6 /* FourthVC.swift */; };
 		0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18A2256542000207437 /* AppDelegate.swift */; };
 		0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B1902256542000207437 /* NavigationControllFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* NavigationControllFlow.storyboard */; };
@@ -64,6 +66,7 @@
 		0BADC0222264A45E00E5A2B6 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
 		0BADC0252264A50600E5A2B6 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		0BADC0282264BA2100E5A2B6 /* ThirdVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdVC.swift; sourceTree = "<group>"; };
+		0BADC0302264D2CB00E5A2B6 /* FourthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthVC.swift; sourceTree = "<group>"; };
 		0BF3B1872256542000207437 /* CoordinatorSkillUp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorSkillUp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BF3B18A2256542000207437 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0BF3B18C2256542000207437 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +159,7 @@
 				0BADC0222264A45E00E5A2B6 /* FirstVC.swift */,
 				0BADC0252264A50600E5A2B6 /* SecondVC.swift */,
 				0BADC0282264BA2100E5A2B6 /* ThirdVC.swift */,
+				0BADC0302264D2CB00E5A2B6 /* FourthVC.swift */,
 			);
 			path = TabBarControllers;
 			sourceTree = "<group>";
@@ -320,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BADC0322264D2CB00E5A2B6 /* FourthVC.swift in Sources */,
 				0BADC02E2264C3EA00E5A2B6 /* Region.swift in Sources */,
 				0BADC02F2264C64100E5A2B6 /* UserProfileViewController.swift in Sources */,
 				0B94EE6F225CCA4000158B91 /* CoordinatorSkillUpUITests.swift in Sources */,
@@ -337,6 +342,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BADC0312264D2CB00E5A2B6 /* FourthVC.swift in Sources */,
 				0BADC01F2264A16E00E5A2B6 /* TabBarCoordinator.swift in Sources */,
 				0BADC0262264A50600E5A2B6 /* SecondVC.swift in Sources */,
 				0BADC0232264A45E00E5A2B6 /* FirstVC.swift in Sources */,

@@ -10,8 +10,15 @@ import UIKit
 
 class ThirdVC: UIViewController {
 
+    //output
+    var didTapOnSegueButton: ( () -> Void )?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Third"
+    }
+    
+    @IBAction func didTapOnSegueButton(_ sender: Any) {
+        didTapOnSegueButton?()
     }
 }

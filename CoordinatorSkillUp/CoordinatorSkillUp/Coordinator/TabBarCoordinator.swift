@@ -12,7 +12,7 @@ final class TabBarCoordinator {
 
     private weak var tabBarController: UITabBarController?
     
-    private var nextCoordibator: UserEditProfileCoordinator?
+    private var nextCoordinator: UserEditProfileCoordinator?
     
     private let firstNavigation = UINavigationController()
     private let secondNavigation = UINavigationController()
@@ -36,18 +36,22 @@ final class TabBarCoordinator {
         }
         //third
         let thirdVC = TabBarControllerFabric.makeThirdController()
+        thirdVC.didTapOnSegueButton = {
+            thirdVC.navigationController?.pushViewController(TabBarControllerFabric.makeFourthController(), animated: true)
+        }
         
         self.firstNavigation.viewControllers = [firstVC]
         self.secondNavigation.viewControllers = [secondVC]
         self.thirdNavigation.viewControllers = [thirdVC]
+        
         tabBarController?.viewControllers = [self.firstNavigation, self.secondNavigation, self.thirdNavigation]
     }
     
     fileprivate func showUserDetailFlow() {
         let user = User(name: "Serg Pogrebnyak", city: City(name: "Kharkiv"))
         let userDetailCoordinator = UserEditProfileCoordinator.init(user: user, navigationController: self.secondNavigation)
-        self.nextCoordibator = userDetailCoordinator
-        self.nextCoordibator!.start()
+        self.nextCoordinator = userDetailCoordinator
+        self.nextCoordinator!.start()
     }
 }
 
@@ -77,5 +81,10 @@ struct TabBarControllerFabric {
         let tabBarItemThird = UITabBarItem(title: "Third", image: UIImage.init(named: "third")!.withRenderingMode(.alwaysOriginal), selectedImage: UIImage.init(named: "third")!)
         thirdVC.tabBarItem = tabBarItemThird
         return thirdVC
+    }
+    
+    static func makeFourthController() -> FourthVC {
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: Bundle.main)
+        return storyboard.instantiateViewController(withIdentifier: "FourthVC") as! FourthVC
     }
 }
