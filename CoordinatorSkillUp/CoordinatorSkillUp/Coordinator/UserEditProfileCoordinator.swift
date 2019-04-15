@@ -78,18 +78,21 @@ final class UserEditProfileCoordinator {
 }
 
 extension UIStoryboard {
+    
+    static private var storyboardName = "NavigationControllFlow"
+    
     static func makeUserEditController() -> UserProfileViewController {
-        let storyboard = UIStoryboard.init(name: "NavigationControllFlow", bundle: Bundle.main)
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: Bundle.main)
         return storyboard.instantiateViewController(withIdentifier: "UserProfileVC") as! UserProfileViewController
     }
     
     static func makeRegionController() -> RegionOutput {
-        let storyboard = UIStoryboard.init(name: "NavigationControllFlow", bundle: Bundle.main)
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: Bundle.main)
         return storyboard.instantiateViewController(withIdentifier: "MagicCityTableView") as! RegionOutput
     }
     
     static func makeCitiesController() -> CitiesOutput {
-        let storyboard = UIStoryboard.init(name: "NavigationControllFlow", bundle: Bundle.main)
+        let storyboard = UIStoryboard.init(name: storyboardName, bundle: Bundle.main)
         return storyboard.instantiateViewController(withIdentifier: "SelectCityVC") as! CitiesOutput
     }
 }
