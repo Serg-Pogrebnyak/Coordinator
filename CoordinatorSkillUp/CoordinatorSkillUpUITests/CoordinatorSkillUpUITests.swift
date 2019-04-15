@@ -43,6 +43,9 @@ class CoordinatorSkillUpUITests: XCTestCase {
     }
     
     func testUniversalTestForAllFlow() {
+        app.buttons["Second"].tap()
+        app.buttons["Segue to user profile flow"].tap()
+        
         XCTAssertTrue(app.buttons["Select another city"].isHittable)//check user can tap on button yes or no
         //make screenshot - test navigator -> right tap mous -> jump to result -> find attach (Screenshot)
         let screenshot = app.windows.firstMatch.screenshot()
@@ -64,6 +67,10 @@ class CoordinatorSkillUpUITests: XCTestCase {
             XCTAssertFalse(app.tables.cells.count > 100)//check count cell in table view
             XCTAssertTrue(app.otherElements["userProfileViewController"].exists)//check type view controller (should improvment accessibilityIdentifier in view controller)
         }
+    }
+    
+    func testTabBar() {
+        app.buttons["Second"].tap()
     }
 
 }
