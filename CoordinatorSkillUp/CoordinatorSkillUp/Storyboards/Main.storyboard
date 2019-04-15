@@ -19,6 +19,7 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWO-Ot-CD2">
                                 <rect key="frame" x="100" y="318.5" width="175" height="30"/>
+                                <accessibility key="accessibilityConfiguration" identifier="segue"/>
                                 <color key="tintColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Segue to user profile flow"/>
                                 <connections>
@@ -34,6 +35,9 @@
                         <viewLayoutGuide key="safeArea" id="k83-I5-N4F"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="rJX-Vj-OJy"/>
+                    <connections>
+                        <outlet property="buttonSegue" destination="HWO-Ot-CD2" id="T9T-iT-YMF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D6Q-TV-UPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

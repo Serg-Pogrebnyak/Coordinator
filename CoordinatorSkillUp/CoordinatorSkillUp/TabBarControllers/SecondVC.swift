@@ -13,9 +13,12 @@ class SecondVC: UIViewController {
     //output
     var didTapOnSegueButton: ( () -> Void )?
     
+    @IBOutlet fileprivate weak var buttonSegue: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Second"
+        buttonSegue.isAccessibilityElement = true
     }
     
     @IBAction func tapOnSegueButton(_ sender: Any) {

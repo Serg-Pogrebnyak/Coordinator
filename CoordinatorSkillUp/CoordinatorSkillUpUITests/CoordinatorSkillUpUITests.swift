@@ -44,7 +44,7 @@ class CoordinatorSkillUpUITests: XCTestCase {
     
     func testUniversalTestForAllFlow() {
         app.buttons["Second"].tap()
-        app.buttons["Segue to user profile flow"].tap()
+        app.buttons["segue"].tap()//segue - it's button accessibility identifier
         
         XCTAssertTrue(app.buttons["Select another city"].isHittable)//check user can tap on button yes or no
         //make screenshot - test navigator -> right tap mous -> jump to result -> find attach (Screenshot)
