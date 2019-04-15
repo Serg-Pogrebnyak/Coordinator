@@ -23,6 +23,11 @@
 		0BADC0272264A50600E5A2B6 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BADC0252264A50600E5A2B6 /* SecondVC.swift */; };
 		0BADC0292264BA2100E5A2B6 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BADC0282264BA2100E5A2B6 /* ThirdVC.swift */; };
 		0BADC02A2264BA2100E5A2B6 /* ThirdVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BADC0282264BA2100E5A2B6 /* ThirdVC.swift */; };
+		0BADC02B2264C1A500E5A2B6 /* UserEditProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */; };
+		0BADC02C2264C3EA00E5A2B6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B19D2256556500207437 /* User.swift */; };
+		0BADC02D2264C3EA00E5A2B6 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B1A12256583600207437 /* City.swift */; };
+		0BADC02E2264C3EA00E5A2B6 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F17E22575C6D0029F202 /* Region.swift */; };
+		0BADC02F2264C64100E5A2B6 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B18B2256542000207437 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18A2256542000207437 /* AppDelegate.swift */; };
 		0BF3B18D2256542000207437 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BF3B18C2256542000207437 /* UserProfileViewController.swift */; };
 		0BF3B1902256542000207437 /* NavigationControllFlow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BF3B18E2256542000207437 /* NavigationControllFlow.storyboard */; };
@@ -315,11 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BADC02E2264C3EA00E5A2B6 /* Region.swift in Sources */,
+				0BADC02F2264C64100E5A2B6 /* UserProfileViewController.swift in Sources */,
 				0B94EE6F225CCA4000158B91 /* CoordinatorSkillUpUITests.swift in Sources */,
 				0BADC0242264A45E00E5A2B6 /* FirstVC.swift in Sources */,
 				0BADC0272264A50600E5A2B6 /* SecondVC.swift in Sources */,
 				0BADC0202264A16E00E5A2B6 /* TabBarCoordinator.swift in Sources */,
+				0BADC02B2264C1A500E5A2B6 /* UserEditProfileCoordinator.swift in Sources */,
 				0BADC02A2264BA2100E5A2B6 /* ThirdVC.swift in Sources */,
+				0BADC02D2264C3EA00E5A2B6 /* City.swift in Sources */,
+				0BADC02C2264C3EA00E5A2B6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

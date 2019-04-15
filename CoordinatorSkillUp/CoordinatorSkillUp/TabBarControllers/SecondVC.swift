@@ -10,7 +10,14 @@ import UIKit
 
 class SecondVC: UIViewController {
 
+    //output
+    var didTapOnSegueButton: ( () -> Void )?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func tapOnSegueButton(_ sender: Any) {
+        didTapOnSegueButton?()
     }
 }

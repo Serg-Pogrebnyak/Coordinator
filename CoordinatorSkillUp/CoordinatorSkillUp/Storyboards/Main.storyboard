@@ -16,6 +16,16 @@
                     <view key="view" contentMode="scaleToFill" id="pZO-TD-Gde">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HWO-Ot-CD2">
+                                <rect key="frame" x="98" y="318" width="179" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" Segue to user profile flow"/>
+                                <connections>
+                                    <action selector="tapOnSegueButton:" destination="oFq-md-jgN" eventType="touchUpInside" id="oX3-0D-UwW"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="k83-I5-N4F"/>
                     </view>
