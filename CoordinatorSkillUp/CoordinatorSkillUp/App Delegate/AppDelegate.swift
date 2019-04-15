@@ -19,7 +19,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard  let tabBarController = window?.rootViewController as? UITabBarController else {
             return true
         }
-        coordinator = TabBarCoordinator.init(tabBarController: tabBarController)
+        let user = User(name: "Serg Pogrebnyak", city: City(name: "Kharkiv"))
+        coordinator = TabBarCoordinator.init(user: user, tabBarController: tabBarController)
         coordinator.start()
         return true
     }

@@ -11,6 +11,7 @@ import UIKit
 final class TabBarCoordinator {
 
     private weak var tabBarController: UITabBarController?
+    private var user: User
     
     private var nextCoordinator: UserEditProfileCoordinator?
     
@@ -18,7 +19,8 @@ final class TabBarCoordinator {
     private let secondNavigation = UINavigationController()
     private let thirdNavigation = UINavigationController()
     
-    init(tabBarController: UITabBarController) {
+    init(user: User, tabBarController: UITabBarController) {
+        self.user = user
         self.tabBarController = tabBarController
     }
     
@@ -29,6 +31,7 @@ final class TabBarCoordinator {
     fileprivate func showAllVC() {
         //first
         let firstVC = TabBarControllerFabric.makeFirstController()
+        firstVC.user = self.user
         //second
         let secondVC = TabBarControllerFabric.makeSecondController()
         secondVC.didTapOnSegueButton = { [weak self] in
@@ -48,8 +51,7 @@ final class TabBarCoordinator {
     }
     
     fileprivate func showUserDetailFlow() {
-        let user = User(name: "Serg Pogrebnyak", city: City(name: "Kharkiv"))
-        let userDetailCoordinator = UserEditProfileCoordinator.init(user: user, navigationController: self.secondNavigation)
+        let userDetailCoordinator = UserEditProfileCoordinator.init(user: self.user, navigationController: self.secondNavigation)
         self.nextCoordinator = userDetailCoordinator
         self.nextCoordinator!.start()
     }

@@ -10,8 +10,22 @@ import UIKit
 
 class FirstVC: UIViewController {
 
+    //input
+    var user: User?
+    
+    @IBOutlet fileprivate weak var userInfoLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "First"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        updateUserInfoOnScreen()
+    }
+    
+    fileprivate func updateUserInfoOnScreen() {
+        userInfoLabel.text = "User: \(user!.name) \n City: \(user!.city.name)"
     }
 }

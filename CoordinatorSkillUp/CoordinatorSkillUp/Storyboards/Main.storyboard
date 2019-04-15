@@ -46,10 +46,25 @@
                     <view key="view" contentMode="scaleToFill" id="jrJ-An-dLr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4gu-CB-Fk1">
+                                <rect key="frame" x="173" y="323.5" width="29" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="4gu-CB-Fk1" firstAttribute="centerY" secondItem="jrJ-An-dLr" secondAttribute="centerY" id="HNi-ug-YHw"/>
+                            <constraint firstItem="4gu-CB-Fk1" firstAttribute="centerX" secondItem="jrJ-An-dLr" secondAttribute="centerX" id="c0w-SN-ZFu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="YcB-5V-6LV"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 1" id="hAR-sK-6wD"/>
+                    <connections>
+                        <outlet property="userInfoLabel" destination="4gu-CB-Fk1" id="Omz-6y-7lJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abW-ZG-zuF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

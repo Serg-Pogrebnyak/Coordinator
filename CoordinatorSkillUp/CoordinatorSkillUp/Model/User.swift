@@ -8,7 +8,12 @@
 
 import Foundation
 
-struct User {
+class User {
     var name: String
     var city: City
+    
+    init(name: String, city: City) {
+        self.name = name
+        self.city = city
+    }
 }
