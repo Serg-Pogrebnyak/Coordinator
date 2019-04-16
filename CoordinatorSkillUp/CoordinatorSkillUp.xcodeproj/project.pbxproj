@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B5B0E952265FF0700FF4D3C /* SnapshotHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B5B0E932265FF0700FF4D3C /* SnapshotHelper.swift */; };
 		0B94EE6F225CCA4000158B91 /* CoordinatorSkillUpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */; };
 		0B97F177225736C90029F202 /* UserEditProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F176225736C90029F202 /* UserEditProfileCoordinator.swift */; };
 		0B97F179225757F70029F202 /* MagicSelectCityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B97F178225757F70029F202 /* MagicSelectCityTableViewController.swift */; };
@@ -53,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B5B0E932265FF0700FF4D3C /* SnapshotHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnapshotHelper.swift; path = fastlane/SnapshotHelper.swift; sourceTree = SOURCE_ROOT; };
 		0B94EE6C225CCA4000158B91 /* CoordinatorSkillUpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorSkillUpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorSkillUpUITests.swift; sourceTree = "<group>"; };
 		0B94EE70225CCA4000158B91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				0B94EE6E225CCA4000158B91 /* CoordinatorSkillUpUITests.swift */,
 				0B94EE70225CCA4000158B91 /* Info.plist */,
+				0B5B0E932265FF0700FF4D3C /* SnapshotHelper.swift */,
 			);
 			path = CoordinatorSkillUpUITests;
 			sourceTree = "<group>";
@@ -335,6 +338,7 @@
 				0BADC02A2264BA2100E5A2B6 /* ThirdVC.swift in Sources */,
 				0BADC02D2264C3EA00E5A2B6 /* City.swift in Sources */,
 				0BADC02C2264C3EA00E5A2B6 /* User.swift in Sources */,
+				0B5B0E952265FF0700FF4D3C /* SnapshotHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
