@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FirstVC: UIViewController {
+class FirstVC: UIViewController, UpdateWithUser {
 
     //input
     var user: User?

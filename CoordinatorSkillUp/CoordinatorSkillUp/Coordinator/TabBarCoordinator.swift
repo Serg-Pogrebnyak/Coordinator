@@ -28,6 +28,19 @@ final class TabBarCoordinator {
         showAllVC()
     }
     
+    func updateUser(user: User) {
+        self.user = user
+        tabBarController?.viewControllers?.forEach({ (VC) in
+            if VC is UINavigationController {
+                for controller in (VC as! UINavigationController).viewControllers {
+                    (controller as? UpdateWithUser)?.user = user
+                }
+            } else {
+                (VC as? UpdateWithUser)?.user = user
+            }
+        })
+    }
+    
     fileprivate func showAllVC() {
         //first
         let firstVC = TabBarControllerFabric.makeFirstController()
@@ -51,7 +64,7 @@ final class TabBarCoordinator {
     }
     
     fileprivate func showUserDetailFlow() {
-        let userDetailCoordinator = UserEditProfileCoordinator.init(user: self.user, navigationController: self.secondNavigation)
+        let userDetailCoordinator = UserEditProfileCoordinator.init(user: self.user, navigationController: self.secondNavigation, rootCoordinator: self)
         self.nextCoordinator = userDetailCoordinator
         self.nextCoordinator!.start()
     }

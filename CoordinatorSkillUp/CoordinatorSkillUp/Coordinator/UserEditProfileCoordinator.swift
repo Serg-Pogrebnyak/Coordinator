@@ -26,11 +26,13 @@ final class UserEditProfileCoordinator {
     // MARK: - Properties
     private var user: User {didSet { updateInterfaces()} }
     private weak var navigationController: UINavigationController?
+    private weak var rootCoordinator: TabBarCoordinator?
     
     // MARK: - init
-    init(user: User, navigationController: UINavigationController) {
+    init(user: User, navigationController: UINavigationController, rootCoordinator: TabBarCoordinator) {
         self.user = user
         self.navigationController = navigationController
+        self.rootCoordinator = rootCoordinator
     }
     
     func start() {
@@ -74,6 +76,7 @@ final class UserEditProfileCoordinator {
     
     private func updateInterfaces() {
         navigationController?.viewControllers.forEach({ ($0 as? UpdateWithUser)?.user = user })
+        rootCoordinator?.updateUser(user: self.user)
     }
 }
 
